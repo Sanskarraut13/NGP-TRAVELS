@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-ul {
+    display: none;
+}
+
+.nav-link li {
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: red;
+
+}
+
+.nav-logo:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-image: url(assest/images/background-img.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.main-cont {
+    margin-bottom: 250px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background-color: red;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: ivory;
+    border-radius: 30px;
+    color: red;
+
+}
+
+button:hover {
+
+    transform: scale(1.1, 1.1);
+    color: red;
+    cursor: pointer;
+}
+
+/* event */
+
+.title {
+    width: 80%;
+    height: 100px;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 20px;
+    color: blueviolet;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.event .row {
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 3vmin;
+    color: darkviolet;
+    margin: 20px auto;
+}
+
+p {
+    color: dimgrey;
+    padding: 0px 40px;
+}
+
+.event .img-button {
+    margin: 30px;
+}
+
+.col .event-img {
+    width: 500px;
+    height: 350px;
+}
+
+.event-img:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+.explore {
+    width: 100%;
+    height: 100%;
+    background-image: url(assest/images/explore-img.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1 {
+    color: whitesmoke;
+    font-size: 7vmin;
+    margin: 50px;
+    margin-bottom: 35px;
+}
+
+.explore-content p {
+    color: whitesmoke;
+}
+
+.explore-content .img-button {
+    margin-top: 40px;
+}
+
+.content-col {
+    width: 40%;
+    margin-left: 100px;
+}
+
+.img-col {
+    width: 60%;
+}
+
+/* upcoming tours */
+
+.tours .img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin: 100px;
+
+}
+
+.img-gallery img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.img-gallery img {
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+}
+
+.content-col h1 {
+    font-size: 7vmin;
+    color: blueviolet;
+}
+
+.content-col .line {
+    margin-left: -1px;
+}
+
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+
+
+
+}
+
+.tours li {
+    color: dimgrey;
+    ;
+}
+
+.content-col .img-button {
+    margin-top: 50px;
+}
+
+/* footer */
+footer {
+
+    padding: 20px 80px;
+    margin: 0;
+    background-color: darkorchid;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/* Mobile device */
+@media (max-width:850px) {
+
+    .event .event-img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+
+
+
+    /* small navbar  */
+    .nav-ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 5px;
+
+    }
+
+    .main {
+        width: 100%;
+        height: 100%;
+        background-image: url(assest/images/background-mimg.jpg);
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+    }
+
+    .nav-ul li {
+        cursor: pointer;
+    }
+
+    .nav-link {
+        display: block;
+    }
+
+
+
+    /* Event */
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        margin: 20px auto;
+    }
+
+    .col .event-img {
+        width: 80%;
+    }
+
+    .col .event-img:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+    /* Explore */
+    .explore-content {
+        width: 100%;
+    }
+
+    /* upcoming tours */
+
+    .tours.col {
+        width: 100%;
+    }
+
+    .img-gallery {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .img-gallery img {
+        width: 300px;
+    }
+
+    .img-gallery img:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+    footer {
+        padding: 20px 80px;
+        background-color: darkorchid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer>div {
+        margin-bottom: 5px;
+    }
+
+    footer>span {
+        font-size: 35px;
+        color: black;
+    }
+
+
+}
